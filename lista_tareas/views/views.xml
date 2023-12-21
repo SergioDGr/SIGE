@@ -4,7 +4,7 @@
     <!-- Definimos como es la vista explicita de la litas-->
     <record model="ir.ui.view" id="lista_tareas.list">
       <field name="name">lista_tareas list</field>
-      <field name="model">lista_tareas.lista_tareas</field>
+      <field name="model">lista_tareas</field>
       <field name="arch" type="xml">
         <tree>
           <field name="tarea"/>
