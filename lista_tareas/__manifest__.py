@@ -21,9 +21,9 @@
     'depends': ['base'],
     # Esto siempre se carga
     'data': [
-        #Este primero indica la politica de acceso del módulo
-        'security/ir.model.access.csv',
         #Cargamos las vistas y las plantillas
         'views/views.xml',
+#Este primero indica la politica de acceso del módulo
+        'security/ir.model.access.csv',
     ],
 }
