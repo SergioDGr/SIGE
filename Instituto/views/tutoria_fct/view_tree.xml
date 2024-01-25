@@ -1,0 +1,15 @@
+<odoo>
+    <!-- Vista de Lista para Calificacion -->
+    <record model="ir.ui.view" id="action_tutoria_fct_tree">
+        <field name="name">turoria_fct.ver.tree</field>
+        <field name="model">instituto.tutoria_fct</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="tutor"/>
+                <field name="email"/>
+                <field name="telefono"/>
+                <field name="alumnos"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

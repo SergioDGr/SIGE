@@ -1,0 +1,20 @@
+<odoo>
+    <!-- Vista de Formulario para Empresa -->
+    <record model="ir.ui.view" id="view_empresa_form">
+        <field name="name">empresa.ver.form</field>
+        <field name="model">instituto.empresa</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="direccion"/>
+                        <field name="telefono"/>
+                        <field name="departamento"/>
+                        <field name="lst_alumnos"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

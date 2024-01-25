@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Menu para tutoria_fct -->
+        <record model="ir.actions.act_window" id="action_tutoria_fct_tree">
+            <field name="name">Ver Tutoria FCT</field>
+            <field name="res_model">instituto.tutoria_fct</field>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tutoria_fct_form"/>
+        </record>
+        <record model="ir.actions.act_window" id="action_tutoria_fct_form">
+            <field name="name">Nueva Tutoria FCT</field>
+            <field name="res_model">instituto.tutoria_fct</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_calificacion_tree"/>
+        </record>
+
+        <!-- Barra para tutoria_fct -->
+        <menuitem   id="menu_tutoria_fct"
+                    name="Tutorias"
+                    parent="menu_principal"/>
+        <menuitem   id="menu_tutoria_fct_todos"
+                    name="Ver todos" 
+                    parent="menu_tutoria_fct"
+                    action="action_calificacion_tree"
+                    groups="group_administrador,group_empresa,group_alumno"/>
+        <menuitem   id="menu_tutoria_fct_nuevo"
+                    name="Nuevo" 
+                    parent="menu_tutoria_fct"
+                    action="action_tutoria_fct_form"
+                    groups="group_administrador,group_empresa"/>
+    </data>
+</odoo>

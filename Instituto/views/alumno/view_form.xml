@@ -1,0 +1,27 @@
+<odoo>
+    <!-- Vista de Formulario para Alumno -->
+    <record model="ir.ui.view" id="view_alumno_form">
+        <field name="name">alumno.ver.form</field>
+        <field name="model">instituto.alumno</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="apellidos"/>
+                        <field name="fecha_nacimiento"/>
+                        <field name="direccion"/>
+                        <field name="codigo_postal"/>
+                        <field name="email"/>
+                        <field name="ciclo_formativo"/>
+                        <field name="coche"/>
+                        <field name="otros"/>
+                        <field name="nota_media"/>
+                        <field name="empresa"/>
+                        <field name="tutor"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

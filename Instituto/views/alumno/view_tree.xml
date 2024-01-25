@@ -1,0 +1,23 @@
+<odoo>
+    <!-- Vista de Lista para Alumno -->
+    <record model="ir.ui.view" id="view_alumno_tree">
+        <field name="name">alumno.ver.tree</field>
+        <field name="model">instituto.alumno</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="apellidos"/>
+                <field name="fecha_nacimiento"/>
+                <field name="direccion"/>
+                <field name="codigo_postal"/>
+                <field name="email"/>
+                <field name="ciclo_formativo"/>
+                <field name="coche"/>
+                <field name="otros"/>
+                <field name="nota_media"/>
+                <field name="empresa"/>
+                <field name="tutor"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

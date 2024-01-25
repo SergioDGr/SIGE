@@ -1,0 +1,16 @@
+<odoo>
+    <!-- Vista de Lista para Empresa -->
+    <record model="ir.ui.view" id="action_empresa_tree">
+        <field name="name">empresa.ver.tree</field>
+        <field name="model">instituto.empresa</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="direccion"/>
+                <field name="telefono"/>
+                <field name="departamento"/>
+                <field name="lst_alumnos"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
