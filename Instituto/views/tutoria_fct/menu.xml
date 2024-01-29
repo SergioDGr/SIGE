@@ -22,7 +22,7 @@
         <menuitem   id="menu_tutoria_fct_todos"
                     name="Ver todos" 
                     parent="menu_tutoria_fct"
-                    action="action_calificacion_tree"
+                    action="action_tutoria_fct_tree"
                     groups="group_administrador,group_empresa,group_alumno"/>
         <menuitem   id="menu_tutoria_fct_nuevo"
                     name="Nuevo" 
