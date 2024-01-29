@@ -1,7 +1,7 @@
 from odoo import models, fields
 
 
-class TutoriaFCT:
+class TutoriaFCT(models.Model):
     _name = 'instituto.tutoria_fct'
     _description = 'Modelo para almacenar las informacion de las tutorias FCT'
 
