@@ -21,7 +21,7 @@
                     parent="menu_principal"/>
         <menuitem   id="menu_empresa_todos"
                     name="Ver todos" 
-                    parent="menu_profesor" 
+                    parent="menu_empresa"
                     action="action_empresa_tree"
                     groups="group_administrador,group_empresa"/>
         <menuitem   id="menu_empresa_nuevo"
