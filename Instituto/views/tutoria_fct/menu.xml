@@ -12,7 +12,7 @@
             <field name="name">Nueva Tutoria FCT</field>
             <field name="res_model">instituto.tutoria_fct</field>
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_calificacion_tree"/>
+            <field name="view_id" ref="view_tutoria_fct_tree"/>
         </record>
 
         <!-- Barra para tutoria_fct -->
