@@ -5,13 +5,8 @@
         <record model="ir.actions.act_window" id="action_tutoria_fct_tree">
             <field name="name">Ver Tutoria FCT</field>
             <field name="res_model">instituto.tutoria_fct</field>
-            <field name="view_mode">tree</field>
+            <field name="view_mode">tree,form</field>
             <field name="view_id" ref="view_tutoria_fct_form"/>
-        </record>
-        <record model="ir.actions.act_window" id="action_tutoria_fct_form">
-            <field name="name">Nueva Tutoria FCT</field>
-            <field name="res_model">instituto.tutoria_fct</field>
-            <field name="view_mode">form</field>
             <field name="view_id" ref="view_tutoria_fct_tree"/>
         </record>
 
@@ -24,10 +19,6 @@
                     parent="menu_tutoria_fct"
                     action="action_tutoria_fct_tree"
                     groups="group_administrador,group_empresa,group_alumno"/>
-        <menuitem   id="menu_tutoria_fct_nuevo"
-                    name="Nuevo" 
-                    parent="menu_tutoria_fct"
-                    action="action_tutoria_fct_form"
-                    groups="group_administrador,group_empresa"/>
+
     </data>
 </odoo>
