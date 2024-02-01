@@ -1,0 +1,17 @@
+<record id="view_alumno_search" model="ir.ui.view">
+    <field name="name">alumnado.search</field>
+    <field name="model">instituto.alumno</field>
+
+    <field name="arch" type="xml">
+        <!-- Definición de la búsqueda -->
+        <search string="Buscar Alumnado">
+            <field name="nombre"/>
+            <field name="apellidos"/>
+            <!-- Filtro para estudiantes con nota media mayor a 9 -->
+            <filter string="Nota Media > 9" name="nota_media" domain="[('nota_media', '>', 9)]"/>
+            <!-- Filtro para estudiantes que tienen coche -->
+            <filter string="Tiene Coche" name="tiene_coche" domain="[('coche', '=', True)]"/>
+        </search>
+    </field>
+
+</record>

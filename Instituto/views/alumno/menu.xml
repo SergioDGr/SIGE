@@ -8,6 +8,7 @@
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="view_alumno_form"/>
             <field name="view_id" ref="view_alumno_tree"/>
+            <field name="search_view_id" ref="view_alumno_search"/>
         </record>
 
         <!-- Barra para alumno -->
