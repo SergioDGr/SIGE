@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import api, models, fields
 
 
 class Alumno(models.Model):
@@ -19,3 +19,14 @@ class Alumno(models.Model):
     nota_media = fields.Float(string='Nota Media', default=5.0)
     empresa = fields.Many2one('instituto.empresa', string='Empresa')
     tutor = fields.Many2one('instituto.tutoria_fct', string='Tutor')
+
+    @api.multi
+    def abrir_formulario(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'res_model': 'instituto.alumno',
+            'res_id': self.id,
+            'view_type': 'form',
+            'view_mode': 'form',
+            'target': 'current',
+        }

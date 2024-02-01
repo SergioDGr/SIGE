@@ -5,6 +5,9 @@
         <field name="model">instituto.alumno</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button name="abrir_formulario" string="Abrir Formulario" type="object"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="nombre"/>
