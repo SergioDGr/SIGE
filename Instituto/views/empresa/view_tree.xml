@@ -9,7 +9,6 @@
                 <field name="direccion"/>
                 <field name="telefono"/>
                 <field name="departamento"/>
-                <field name="lst_alumnos"/>
             </tree>
         </field>
     </record>

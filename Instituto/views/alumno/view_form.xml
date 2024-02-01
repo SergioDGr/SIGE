@@ -17,8 +17,6 @@
                         <field name="coche"/>
                         <field name="otros"/>
                         <field name="nota_media"/>
-                        <field name="empresa"/>
-                        <field name="tutor"/>
                     </group>
                 </sheet>
             </form>
