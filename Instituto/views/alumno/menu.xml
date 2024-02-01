@@ -24,10 +24,5 @@
                     parent="menu_alumno" 
                     action="action_alumno_tree"
                     groups="group_administrador,group_alumno"/>
-        <menuitem   id="menu_alumno_nuevo" 
-                    name="Nuevo" 
-                    parent="menu_alumno" 
-                    action="action_alumno_form"
-                    groups="group_administrador"/>
     </data>
 </odoo>
