@@ -13,6 +13,7 @@
 
         'views/menu_principal.xml',
 
+        'views/alumno/view_search.xml',
         'views/alumno/view_form.xml',
         'views/alumno/view_tree.xml',
         'views/alumno/menu.xml',
