@@ -2,6 +2,7 @@ from odoo import models, fields
 
 
 class Alumno(models.Model):
+    """Clase que representa el modelo Alumno"""
 
     _name = 'instituto.alumno'
     _description = 'Modelo para almacenar las informacion de los alumnos'

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <!-- Permiso para el modelo Estudiante-->
+        <!-- Permiso para el modelo Alumno-->
         <record model="ir.model.access" id="access_admin_alumno">
             <field name="name">Access Alumno Administrador</field>
             <field name="model_id" ref="model_instituto_alumno"/>

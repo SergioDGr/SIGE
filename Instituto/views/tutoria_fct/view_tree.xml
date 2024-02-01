@@ -1,5 +1,5 @@
 <odoo>
-    <!-- Vista de Lista para Calificacion -->
+    <!-- Vista de Lista para Tutoria FCT -->
     <record model="ir.ui.view" id="view_tutoria_fct_tree">
         <field name="name">turoria_fct.ver.tree</field>
         <field name="model">instituto.tutoria_fct</field>

@@ -1,8 +1,8 @@
 <odoo>
+    <!-- Vista para el buscador -->
     <record id="view_alumno_search" model="ir.ui.view">
         <field name="name">alumnado.search</field>
         <field name="model">instituto.alumno</field>
-
         <field name="arch" type="xml">
             <!-- Definición de la búsqueda -->
             <search string="Buscar Alumnado">
@@ -14,6 +14,5 @@
                 <filter string="Tiene Coche" name="tiene_coche" domain="[('coche', '=', True)]"/>
             </search>
         </field>
-
     </record>
 </odoo>

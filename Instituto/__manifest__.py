@@ -1,7 +1,7 @@
 {
     'name': 'Módulo de instituto',
     'summary': 'Módulo para realizar la gestión del instituto.',
-    'description': 'Este módulo puede ser utilizado por alumnos, maestros y padres para visualizar y gestionar las notas de los alumnos en sus actividades.',
+    'description': 'Modulo para ver las empresas, instituos y los tutores de las FCTs',
     'version': '1.0.0',
     'category': 'Human Resources',
     'author': 'Sergio Groppa',

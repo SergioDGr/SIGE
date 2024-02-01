@@ -2,6 +2,8 @@ from odoo import models, fields
 
 
 class Empresa(models.Model):
+    """Clase que representa el modelo Empresa"""
+
     _name = 'instituto.empresa'
     _description = 'Modelo para almacenar las informacion de las empresas'
 
