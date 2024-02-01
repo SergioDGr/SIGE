@@ -5,16 +5,11 @@
         <record model="ir.actions.act_window" id="action_alumno_tree">
             <field name="name">Ver alumnos</field>
             <field name="res_model">instituto.alumno</field>
-            <field name="view_mode">tree</field>
+            <field name="view_mode">tree, form</field>
             <field name="view_id" ref="view_alumno_form"/>
-        </record>
-        <record model="ir.actions.act_window" id="action_alumno_form">
-            <field name="name">Nueva alumno</field>
-            <field name="res_model">instituto.alumno</field>
-            <field name="view_mode">form</field>
             <field name="view_id" ref="view_alumno_tree"/>
         </record>
-
+        
         <!-- Barra para alumno -->
         <menuitem   id="menu_alumno" 
                     name="alumnos" 
