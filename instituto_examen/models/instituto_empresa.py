@@ -22,6 +22,9 @@ class InstitutoEmpresa(models.Model):
         selection=[('informática','Informática'), ('comercio','Comercio'), ('marketing','Marketing'), ('administración','Administración')], default = "informática",
         help="Departamento")
 
+    disponibilidad_2024 = fields.Selection(string="disponibilidad 2024",
+        selection=[('disponible', 'Disponible'), ('no_disponible','No Disponible')], default="disponible")
+
     # Si en el xml ponemos: <button name="accion_servidor" type="object" string="Ayuda"/>
     # Nos aparece un botón con un hipervínculo si descomentamos además la función:
 

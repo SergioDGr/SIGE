@@ -59,11 +59,4 @@
         </field>
     </record>
 
-    <!-- Item del menú con acción de url que redirige a las documentaciones de Odoo -->
-    <record model="ir.actions.act_url" id="instituto_ayuda_action">
-        <field name="name">Open odoo documentation web page</field>
-        <field name="url">https://www.odoo.com/es_ES/page/docs</field>
-        <field name="target">new</field>
-    </record>
-
 </odoo>
