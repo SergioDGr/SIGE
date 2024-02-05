@@ -2,6 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import fields, models, api, relativedelta
+from datetime import datetime
 
 class InstitutoAlumno(models.Model):
     _name = "instituto.alumno"
@@ -16,7 +17,7 @@ class InstitutoAlumno(models.Model):
     # Tiene que tener si o si un atributo name porque sino coge el id
     name = fields.Char(required=True, string='Nombre')
     ap = fields.Char(required=True, string='Apellidos')
-    fechNac = fields.Datetime(required=True, string='Fecha de nacimiento', default=fields.Datetime.now)
+    fechNac = fields.Datetime(required=True, string='Fecha de nacimiento', default=lambda self: datetime.now())
     dir = fields.Char(string='Dirección')
     codPostal = fields.Char(string='Código Postal')
     email = fields.Char(string='Email')
