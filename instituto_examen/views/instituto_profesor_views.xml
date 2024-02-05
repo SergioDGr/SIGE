@@ -4,7 +4,7 @@
 
 <odoo>
     <record id="instituto_profesor_action" model="ir.actions.act_window">
-        <field name="name">profesores</field>
+        <field name="name">Profesores</field>
         <field name="res_model">instituto.profesor</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -28,7 +28,7 @@
         <field name="name">instituto.profesor.form</field>
         <field name="model">instituto.profesor</field>
         <field name="arch" type="xml">
-            <form string="profesor">
+            <form string="Profesor">
                 <sheet>
                     <group>
                         <group>
