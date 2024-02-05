@@ -3,4 +3,3 @@ access_instituto_alumno,access_instituto_alumno,model_instituto_alumno,base.grou
 access_instituto_valoracion,access_instituto_valoracion,model_instituto_valoracion,base.group_user,1,1,1,1
 access_instituto_practicas,access_instituto_practicas,model_instituto_practicas,base.group_user,1,1,1,1
 access_instituto_empresa,access_instituto_empresa,model_instituto_empresa,base.group_user,1,1,1,1
-access_instituto_profesor,access_instituto_profesor,model_instituto_profesor,base.group_user,1,1,1,1
