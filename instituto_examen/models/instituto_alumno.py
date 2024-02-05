@@ -40,7 +40,7 @@ class InstitutoAlumno(models.Model):
 
     # Calcular el campo de texto de la media
     mediaTxt = fields.Char(string='Nota Media', default="Aprobado", compute="_media_txt", readonly=True)
-    mediatTotal = fields.Char(string='Nota Media Total', compute="_calculo_nota_media", readonly=True)
+    mediaTotal = fields.Char(string='Nota Media Total', compute="_calculo_nota_media", readonly=True)
 
     @api.depends("media")
     def _media_txt(self):

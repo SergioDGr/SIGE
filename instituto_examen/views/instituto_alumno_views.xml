@@ -26,7 +26,7 @@
                 <field name="ejercicios"/>
                 <field name="proyectos"/>
                 <field name="examenes"/>
-                <field name="mediatTotal"/>
+                <field name="mediaTotal"/>
             </tree>
         </field>
     </record>
@@ -72,7 +72,7 @@
                                 <field name="ejercicios"/>
                                 <field name="proyectos"/>
                                 <field name="examenes"/>
-                                <field name="mediatTotal"/>
+                                <field name="mediaTotal"/>
                             </group>
                         </page>
                     </notebook>
