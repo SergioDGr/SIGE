@@ -43,27 +43,4 @@
         </field>
     </record>
 
-     <!-- Vista Busqueda a la altura de la de arbol -->
-    <record id="instituto_profesor_view_search" model="ir.ui.view">
-        <field name="name">instituto.profesor.search</field>
-        <field name="model">instituto.profesor</field>
-        <field name="arch" type="xml">
-            <search string="Buscar...">
-                <field name="name"/>
-                <field name="depar"/>
-                 <!-- Filtro Agrupar por -->
-                <group expand="1" string="Group By">
-                        <filter string="Departamento" name="depar" context="{'group_by':'depar'}"/>
-                </group>
-            </search>
-        </field>
-    </record>
-
-    <!-- Item del menú con acción de url que redirige a las documentaciones de Odoo -->
-    <record model="ir.actions.act_url" id="instituto_ayuda_action">
-        <field name="name">Open odoo documentation web page</field>
-        <field name="url">https://www.odoo.com/es_ES/page/docs</field>
-        <field name="target">new</field>
-    </record>
-
 </odoo>
