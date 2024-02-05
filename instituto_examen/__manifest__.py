@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'Instituto',
+    'name': 'Institutotutor',
     'version': '1.0',
     'category': 'Technical',
     'description': 'Módulo instituto',
@@ -18,6 +18,7 @@
         'views/instituto_practicas_views.xml',
         'views/instituto_valoracion_views.xml',
         'views/instituto_empresa_views.xml',
+        'views/instituto_profesor_views.xml',
         'views/instituto_menus.xml',
     ],
     'demo': [],
