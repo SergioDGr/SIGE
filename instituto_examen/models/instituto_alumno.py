@@ -3,6 +3,7 @@
 
 from odoo import fields, models, api, relativedelta
 from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 class InstitutoAlumno(models.Model):
     _name = "instituto.alumno"
@@ -17,7 +18,11 @@ class InstitutoAlumno(models.Model):
     # Tiene que tener si o si un atributo name porque sino coge el id
     name = fields.Char(required=True, string='Nombre')
     ap = fields.Char(required=True, string='Apellidos')
-    fechNac = fields.Datetime(required=True, string='Fecha de nacimiento', default=lambda self: datetime.now())
+    my_datetime = datetime.now()
+
+    date = fields.Date.today() - relativedelta(years=16)
+    fechNac = fields.Datetime(required=True, string='Fecha de nacimiento', default=date)
+
     dir = fields.Char(string='Dirección')
     codPostal = fields.Char(string='Código Postal')
     email = fields.Char(string='Email')
