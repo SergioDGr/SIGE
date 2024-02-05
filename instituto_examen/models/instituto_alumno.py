@@ -34,6 +34,11 @@ class InstitutoAlumno(models.Model):
     otros = fields.Char(string='Otros')
     media = fields.Float(string='Nota Media', default = "5.0")
 
+    actitud = fields.Float(string='Actitud')
+    ejercicios = fields.Float(string='Ejercicios')
+    proyectos = fields.Float(string='Proyectos')
+    examen = fields.Float(string='Examen')
+
     # Calcular el campo de texto de la media
     mediaTxt = fields.Char(string='Nota Media', default = "Aprobado", compute="_media_txt", readonly=True)
     

@@ -58,6 +58,18 @@
                             </group>
                         </page>
                     </notebook>
+
+                    <!-- El orden del notebook tiene que ser así para que salgan los labels -->
+                    <notebook>
+                        <page string="Datos Notas">
+                            <group>
+                            <field name="actitud"/>
+                            <field name="ejercicios"/>
+                            <field name="proyectos"/>
+                            <field name="examen"/>
+                            </group>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
