@@ -25,7 +25,7 @@
                 <field name="actitud"/>
                 <field name="ejercicios"/>
                 <field name="proyectos"/>
-                <field name="examen"/>
+                <field name="examenes"/>
             </tree>
         </field>
     </record>
@@ -70,7 +70,7 @@
                             <field name="actitud"/>
                             <field name="ejercicios"/>
                             <field name="proyectos"/>
-                            <field name="examen"/>
+                            <field name="examenes"/>
                             </group>
                         </page>
                     </notebook>

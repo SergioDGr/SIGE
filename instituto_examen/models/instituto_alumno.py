@@ -18,9 +18,8 @@ class InstitutoAlumno(models.Model):
     # Tiene que tener si o si un atributo name porque sino coge el id
     name = fields.Char(required=True, string='Nombre')
     ap = fields.Char(required=True, string='Apellidos')
-    my_datetime = datetime.now()
 
-    date = fields.Date.today() - relativedelta(years=16)
+    date = fields.Datetime.now() - relativedelta(years=16)
     fechNac = fields.Datetime(required=True, string='Fecha de nacimiento', default=date)
 
     dir = fields.Char(string='Dirección')
@@ -32,12 +31,12 @@ class InstitutoAlumno(models.Model):
         help="Ciclo formativo")
     coche = fields.Boolean(string='Coche')
     otros = fields.Char(string='Otros')
-    media = fields.Float(string='Nota Media', default = "5.0")
+    media = fields.Float(string='Nota Media', default="5.0")
 
     actitud = fields.Float(string='Actitud')
     ejercicios = fields.Float(string='Ejercicios')
     proyectos = fields.Float(string='Proyectos')
-    examen = fields.Float(string='Examen')
+    examenes = fields.Float(string='Examen')
 
     # Calcular el campo de texto de la media
     mediaTxt = fields.Char(string='Nota Media', default = "Aprobado", compute="_media_txt", readonly=True)
@@ -55,6 +54,12 @@ class InstitutoAlumno(models.Model):
                         record.mediaTxt = "Notable"
                     else:
                         record.mediaTxt = "Sobresaliente"
+
+    @api.depends('actitud', 'ejercicios', 'proyectos', 'examenes')
+    def _compute_nota_media(self):
+        for record in self:
+            record.nota_media = (0.05 * record.actitud + 0.20 * record.ejercicios_clase + 0.55 * record.proyecto +
+                                 0.20 * record.examen_proyecto)
 
     # Campo empresa
     empresa_id = fields.Many2one("instituto.empresa", string="Empresa", required=True)
