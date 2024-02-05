@@ -26,6 +26,7 @@
                 <field name="ejercicios"/>
                 <field name="proyectos"/>
                 <field name="examenes"/>
+                <field name="mediatTotal"/>
             </tree>
         </field>
     </record>
@@ -55,10 +56,10 @@
                     <notebook>
                         <page string="Datos Personales">
                             <group>
-                            <field name="fechNac"/>
-                            <field name="dir"/>
-                            <field name="codPostal"/>
-                            <field name="otros"/>
+                                <field name="fechNac"/>
+                                <field name="dir"/>
+                                <field name="codPostal"/>
+                                <field name="otros"/>
                             </group>
                         </page>
                     </notebook>
@@ -67,10 +68,11 @@
                     <notebook>
                         <page string="Datos Notas">
                             <group>
-                            <field name="actitud"/>
-                            <field name="ejercicios"/>
-                            <field name="proyectos"/>
-                            <field name="examenes"/>
+                                <field name="actitud"/>
+                                <field name="ejercicios"/>
+                                <field name="proyectos"/>
+                                <field name="examenes"/>
+                                <field name="mediatTotal"/>
                             </group>
                         </page>
                     </notebook>

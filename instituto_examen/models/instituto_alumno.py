@@ -27,7 +27,7 @@ class InstitutoAlumno(models.Model):
     email = fields.Char(string='Email')
     ciclo = fields.Selection(
         string='Ciclo formativo',
-        selection=[('dam','DAM'), ('daw','DAW'), ('asir','ASIR')], default = "dam", required=True,
+        selection=[('dam', 'DAM'), ('daw', 'DAW'), ('asir', 'ASIR')], default="dam", required=True,
         help="Ciclo formativo")
     coche = fields.Boolean(string='Coche')
     otros = fields.Char(string='Otros')
@@ -39,8 +39,9 @@ class InstitutoAlumno(models.Model):
     examenes = fields.Float(string='Examen')
 
     # Calcular el campo de texto de la media
-    mediaTxt = fields.Char(string='Nota Media', default = "Aprobado", compute="_media_txt", readonly=True)
-    
+    mediaTxt = fields.Char(string='Nota Media', default="Aprobado", compute="_media_txt", readonly=True)
+    mediatTotal = fields.Char(string='Nota Media Total', compute="_calculo_nota_media", readonly=True)
+
     @api.depends("media")
     def _media_txt(self):
         for record in self:
@@ -56,7 +57,7 @@ class InstitutoAlumno(models.Model):
                         record.mediaTxt = "Sobresaliente"
 
     @api.depends('actitud', 'ejercicios', 'proyectos', 'examenes')
-    def _compute_nota_media(self):
+    def _calculo_nota_media(self):
         for record in self:
             record.nota_media = (0.05 * record.actitud + 0.20 * record.ejercicios_clase + 0.55 * record.proyecto +
                                  0.20 * record.examen_proyecto)
